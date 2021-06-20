@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<body>
+    <body>
+        <p>Score :</p>
+    <script>
+            var score=localStorage.getItem("score");
+            document.write(score);
+    </script>
+    <p>High Score:</p>
+    <script>
+        var highscore=localStorage.getItem("highscore");
+        document.write(highscore);
+    </script>
+    <br>
+    <button class="button" onclick="openfile()">Play Again</button>
+    <style>
+        body
+        {
+            background-color: black;
+            color:blue;
+            text-align: center;
+            font-size: 45px;
+        }
+        .button
+        {
+            height: 50px;
+            width: 150px;
+            color: blue;
+            font-size: 25px;
+            
+        }
+    </style>
+    <script>
+        function openfile()
+        {
+            window.location.href="index.html";
+        }
+    </script>
+</body>
